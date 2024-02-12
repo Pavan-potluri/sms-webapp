@@ -52,6 +52,22 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+				<plugin>
+					<groupId>org.projectlombok</groupId>
+					<artifactId>lombok-maven-plugin</artifactId>
+					<version>1.18.20.1</version> <!-- Replace with the latest version -->
+					<executions>
+						<execution>
+							<id>install-lombok</id>
+							<phase>initialize</phase>
+							<goals>
+								<goal>install</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+
 		</plugins>
 	</build>
 
